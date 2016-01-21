@@ -1,0 +1,25 @@
+{
+   "background": {
+      "scripts": [ "javascript/background.js" ]
+   },
+   "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["javascript/content.js"]
+      }
+    ],
+   "page_action": {
+      "default_icon": "images/icon48.png",
+      "default_popup": "popup.html"
+   },
+   "description": "Show and copy the url-shortlink",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon48.png",
+      "48": "images/icon128.png"
+   },
+   "manifest_version": 2,
+   "name": "URL Shortlink",
+   "permissions": [ "tabs", "\u003Call_urls>" ],
+   "version": "1.0"
+}
