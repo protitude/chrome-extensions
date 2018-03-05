@@ -4,6 +4,7 @@
   "name": "Modify CSS and HTML in Service Now",
   "version": "0.1.0",
   "description": "Change servicenow time link",
+  "converted_from_user_script": true,
 
   "content_scripts": [{
     "css": ["styles.css"],
