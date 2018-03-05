@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Modify CSS and HTML in Service Now",
+  "version": "0.1.0",
+  "description": "Change servicenow time link",
+
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["jquery-3.3.1.min.js", "content.js"],
+    "matches": ["https://colorado.service-now.com/*"],
+    "run_at": "document_end",
+    "all_frames": true
+  }],
+  "background": [{
+    "js": ["jquery-3.3.1.min.js"]
+  }]
+
+}
