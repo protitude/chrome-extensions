@@ -8,8 +8,14 @@
     $("span.user-name").text(function () {
       return $(this).text().replace("Miles France", "Code Monkey");
     });
+    $("span.sn-avatar-initials").text(function () {
+      return $(this).text().replace("MF", "CM");
+    });
     $("span.user-name").text(function () {
       return $(this).text().replace("Robert Schwander", "Wise Leader");
+    });
+    $("span.sn-avatar-initials").text(function () {
+      return $(this).text().replace("BS", "WL");
     });
     $("span.ng-binding").text(function () {
       return $(this).text().replace("MyTime", "TPS Report");
